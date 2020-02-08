@@ -1,0 +1,51 @@
+
+#named vactor
+
+x <- c('url'='www.google.com','index'='home.html')
+x['index']
+
+print("**********")
+
+unname(x["url"])
+names(x)
+print('*************')
+
+#manipulating vectors
+
+v <- 1:10
+w <- 11:20
+
+v
+w
+#modifying value of v
+v[1] <- 100
+v
+v[v<5] <- 10
+#deleting a vector
+u <- 1:5
+u
+u <- NULL
+u
+#vector arithmetic
+
+v+w
+v-w
+v*w
+v/w
+
+#operating element wise
+
+v+10
+w*20
+
+#combine 2 vectors
+
+x <- c(v,w)
+x
+
+#vector functions
+
+sum(u)
+min(v)
+max(w)
+prod(w)
