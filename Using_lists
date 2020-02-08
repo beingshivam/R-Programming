@@ -1,0 +1,51 @@
+
+print("**********")
+
+#using lists
+
+a <- list(1,"shivam",1.2,NA,TRUE,FALSE,c(1,5)) #contains elements of different types
+a[1]
+a[[2]]
+a[[7]][2]
+
+typeof(a[1])
+typeof(a[2])
+typeof(a[3])
+typeof(a[4])
+typeof(a[5])
+
+print("****************")
+#use double bracket syntax to get type of particular index element
+
+typeof(a[[1]])
+typeof(a[[2]])
+typeof(a[[3]])
+typeof(a[[4]])
+typeof(a[[5]])
+typeof(a[[7]])
+
+print('****************')
+
+#named list
+
+b <- list(a='shivam',c=c(1,2,3,4,5), d =5.5)
+b$a
+b$c
+b$d
+
+#reassigning an element 
+
+b$a <- c(40,15,144)
+b$a
+
+#functions in R
+
+#structure of list
+str(b)
+#length of list
+length(b)
+print('***************')
+#applying a function to list
+lapply(b,mean)
+#applying a function to a list and returning vector
+sapply(b,mean)
