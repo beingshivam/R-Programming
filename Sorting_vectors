@@ -1,0 +1,23 @@
+
+print("**********")
+
+#sorting vector
+
+v <- c(10,22,31,4,55,61,74,18,29,10)
+v
+sort(v) #by default in ascending
+sort(v, decreasing=TRUE)
+
+print("**********")
+
+w <- c('ram','sham','abc','xyz')
+sort(w) #sorts in lexical/albhabetical order
+
+print("**********")
+
+#using NA
+
+a <- c(1,2,4,NA,15,NA,58,NA)
+a
+sort(a)
+sort(a, na.last = TRUE) #puts NA at last
